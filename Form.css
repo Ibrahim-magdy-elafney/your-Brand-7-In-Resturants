@@ -1,0 +1,50 @@
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background: #fffbeb;
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 250px;
+
+
+}
+
+h1:hover {
+
+    color: #f59e0b;
+
+}
+
+
+p:hover {
+
+    color: #f59e0b;
+
+}
+
+.t1 {
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+.t2 {
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+
+}
