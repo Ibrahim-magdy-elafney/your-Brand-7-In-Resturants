@@ -5,10 +5,12 @@ const result = document.getElementById("result");
 const total = document.getElementById("total");
 
 form.addEventListener("submit", function (e) {
+
     e.preventDefault();
 
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
+    const messageField = document.getElementById("message").value;
 
     if (!name || !email || quantity.value <= 0) {
         result.style.color = "red";
@@ -18,15 +20,28 @@ form.addEventListener("submit", function (e) {
 
     const price = Number(meal.value);
     const qty = Number(quantity.value);
-
     const finalPrice = price * qty;
 
     total.innerText = `Total Price: $${finalPrice}`;
     result.style.color = "green";
     result.innerText = "Order placed successfully!";
 
-    // تأخير بسيط عشان المستخدم يشوف النتيجة
+    const mealText = meal.options[meal.selectedIndex].text;
+
+    const message = `New Order:
+Name: ${name}
+Email: ${email}
+Order: ${mealText}
+Quantity: ${qty}
+Total: $${finalPrice}
+Notes: ${messageField}`;
+
+    const phone = "2010xxxxxxxx";
+
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
     setTimeout(() => {
-        window.location.href = "index-form.html";
+        window.open(url, "_blank");
     }, 1000);
+
 });
