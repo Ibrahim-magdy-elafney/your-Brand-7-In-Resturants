@@ -23,8 +23,22 @@
 <body>
     <header>
 
-        <h1 class="logo">Your Brand 🍽️</h1>
-        <br>
+        <div class="header-flex">
+
+            <div class="text">
+
+                <div>
+                    <h1 class="logo">Your Brand</h1>
+                </div>
+
+            </div>
+
+            <div>
+                <img src="Synfig Animation 1.gif" alt="Burger" class="Burger">
+            </div>
+
+
+        </div>
 
         <ul class="box">
 
@@ -36,7 +50,7 @@
 
             <li><a href="#Gallery">Gallery</a></li>
 
-            <li><a href="#Contact">Contact Us</a></li>
+            <li><a href="#Contact">Contact</a></li>
 
             <li><a href="#Footer">Footer</a></li>
 
@@ -68,7 +82,13 @@
 
     <section>
 
-        <h2 id="About">About</h2>
+        <h2 id="About" class="title-with-icon">
+
+            About
+
+            <img src="Synfig Animation 2.gif" alt="Bizza" class="Bizza">
+
+        </h2>
         <br>
         <div class="flex">
             <div class="text">
@@ -86,8 +106,13 @@
 
     <section>
 
-        <h2 id="Menu">Menu</h2>
+        <h2 id="Menu" class="title-with-icon">
 
+            Menu
+
+            <img src="Synfig Animation 2.gif" alt="Bizza" class="Bizza">
+
+        </h2>
         <br>
         <div class="flex">
             <div class="text">
@@ -146,8 +171,13 @@
 
     <section>
 
-        <h2 id="Gallery">Gallery</h2>
+        <h2 id="Gallery" class="title-with-icon">
 
+            Gallery
+
+            <img src="Synfig Animation 2.gif" alt="Bizza" class="Bizza">
+
+        </h2>
         <div class="flex">
 
             <div>
@@ -172,8 +202,13 @@
 
     <section>
 
-        <h2 id="Contact">Contact</h2>
-        <br>
+        <h2 id="Contact" class="title-with-icon">
+
+            Contact
+
+            <img src="Synfig Animation 2.gif" alt="Bizza" class="Bizza">
+
+        </h2>
         <br>
         <form id="form" method="post">
 
@@ -214,22 +249,54 @@
                     <br>
                     <div>
 
+                        <label>Registration day</label>
+                        <input type="date" name="date" required class="date">
+                        <br>
+                        <br>
+                        <label>What time is it?</label>
+                        <input type="time" name="time" required class="time">
+
+                    </div>
+
+                    <br>
+                    <div>
+
+                        <label>The day you will most likely grace us with your presence</label>
+                        <input type="date" name="date" class="date">
+                        <br>
+                        <br>
+                        <br>
+                        <label>What time is it?</label>
+                        <input type="time" name="time" class="time">
+
+                    </div>
+
+                    <br>
+
+                    <div>
+
                         <label>Username</label>
-                        <input type="text" name="User" id="name" required placeholder="Username">
+                        <input type="text" name="User" id="name" class="Username" required placeholder="Username">
 
                     </div>
                     <br>
                     <br>
                     <div>
 
-                        <label>Email</label>
-                        <input type="email" name="mail" id="email" required placeholder="Email" value="">
+                        <label>Your Email address if you'd like</label>
+                        <input type="email" name="mail" id="email" class="email" placeholder="Email" value="">
 
                     </div>
                     <br>
+                    <div>
+
+                        <label>Your Number Phone</label>
+                        <input type="tel" id="phoneNumber" class="phone" required placeholder="01XXXXXXXXX">
+
+                    </div>
                     <br>
                     <div>
-                        <textarea id="message" placeholder="Send Your Notes"></textarea>
+                        <textarea id="message" class="text" placeholder="Send Your Notes"></textarea>
                     </div>
                     <br>
                     <div>
@@ -256,8 +323,13 @@
 
     <footer>
 
-        <h2 id="Footer">Footer</h2>
+        <h2 id="Footer" class="title-with-icon">
 
+            Footer
+
+            <img src="Synfig Animation 2.gif" alt="Bizza" class="Bizza">
+
+        </h2>
 
         <h3>Your Brand 🍽️
         </h3>
@@ -268,19 +340,17 @@
                 </p>
                 <br>
                 <div>
-                    <ul class="box">
+                    <ul class="Mainbox">
 
-                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Home" class="He">Home</a></li>
 
                         <li><a href="#Menu">Menu</a></li>
 
-                        <li><a href="#About">About</a></li>
+                        <li><a href="#About" class="Ab">About</a></li>
 
                         <li><a href="#Gallery">Gallery</a></li>
 
-                        <li><a href="#Contact">Contact Us</a></li>
-
-                        <li><a href="#Footer">Footer</a></li>
+                        <li><a href="#Contact" class="Cont">Contact</a></li>
 
                     </ul>
                 </div>
