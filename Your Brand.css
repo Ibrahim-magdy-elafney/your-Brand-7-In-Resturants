@@ -291,6 +291,67 @@ img {
 
 }
 
+select {
+
+    text-align: center;
+
+}
+
+.Number {
+
+    text-align: center;
+
+}
+
+.Username {
+
+    text-align: center;
+
+}
+
+.message-box {
+
+    width: 165px;
+    min-height: 80px;
+
+    background: #ffffff;
+    border: 1px solid #5e5e5e;
+    border-radius: 5px;
+
+    text-align: center;
+
+    resize: vertical;
+
+}
+
+.email {
+
+
+    text-align: center;
+
+}
+
+.date {
+
+
+    text-align: center;
+
+}
+
+.time {
+
+
+    text-align: center;
+
+}
+
+.phone {
+
+
+    text-align: center;
+
+}
+
 .He {
 
     display: flex;
